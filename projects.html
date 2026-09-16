@@ -1,222 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects completed by Yaya Bah in cybersecurity and web development.">
-    <title>Yaya Bah's Capstone Project</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Projects | Yaya Bah Portfolio
+    </title>
+
+    <meta name="description"
+          content="Cybersecurity and web development projects completed by Yaya Bah.">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
+
 
 <body>
 
+
+<a class="skip-link"
+   href="#main-content">
+
+    Skip to main content
+
+</a>
+
+
 <header>
-    <div class="container">
-        <a href="index.html" class="logo">Yaya Bah</a>
 
-        <button
-            class="menu-button"
-            id="menuButton"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-            aria-controls="mainNavigation">
-            ☰
-        </button>
+    <div class="site-header">
 
-        <nav id="mainNavigation" aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" aria-current="page">Projects</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
+        <p class="site-title">
+
+            My <span>Portfolio</span>
+
+        </p>
+
+
+        <nav aria-label="Main navigation">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="projects.html"
+               class="active"
+               aria-current="page">
+
+                Projects
+
+            </a>
+
+            <a href="about.html">
+                About &amp; Contact
+            </a>
+
         </nav>
+
     </div>
+
 </header>
 
 
-<main>
-
-    <section class="page-header">
-        <div class="container">
-            <p class="eyebrow">My Work</p>
-            <h1>Projects</h1>
-
-            <p>
-                These projects demonstrate skills I have developed through my
-                coursework and professional interests in cybersecurity,
-                accessibility, responsive design, and JavaScript.
-            </p>
-        </div>
-    </section>
+<main id="main-content">
 
 
-    <section class="section">
-        <div class="container">
+    <section aria-labelledby="projects-heading">
 
-            <div class="filter-controls" aria-label="Project filters">
 
-                <button class="filter-button active" data-filter="all">
-                    All
-                </button>
+        <h1 id="projects-heading">
+            My Projects
+        </h1>
 
-                <button class="filter-button" data-filter="web">
+
+        <p class="section-intro">
+
+            These projects represent some of
+            the technical skills I am developing
+            through my classes and independent practice.
+
+        </p>
+
+
+        <div class="project-grid">
+
+
+            <article class="project-card">
+
+                <p class="project-label">
                     Web Development
-                </button>
+                </p>
 
-                <button class="filter-button" data-filter="security">
+                <h2>
+                    Portfolio Website
+                </h2>
+
+                <p>
+
+                    I created a three-page portfolio website
+                    using semantic HTML, external CSS,
+                    Grid, Flexbox, responsive design,
+                    accessibility practices, and JavaScript.
+
+                </p>
+
+            </article>
+
+
+            <article class="project-card">
+
+                <p class="project-label">
                     Cybersecurity
-                </button>
+                </p>
 
-            </div>
+                <h2>
+                    Cybersecurity Lab
+                </h2>
 
+                <p>
 
-            <div class="project-grid">
+                    This project involved practicing
+                    network monitoring, reviewing security alerts,
+                    identifying possible threats,
+                    and documenting the investigation.
 
-                <article class="project-card" data-category="web">
-                    <h2>Responsive Website Project</h2>
+                </p>
 
-                    <p>
-                        I created a multi-page responsive website using
-                        semantic HTML and CSS. The website adjusts its layout
-                        for mobile phones, tablets, and desktop computers.
-                    </p>
-
-                    <h3>Skills Used</h3>
-
-                    <ul>
-                        <li>Semantic HTML5</li>
-                        <li>CSS Flexbox and Grid</li>
-                        <li>Responsive design</li>
-                        <li>Media queries</li>
-                        <li>Accessibility</li>
-                    </ul>
-                </article>
+            </article>
 
 
-                <article class="project-card" data-category="web">
-                    <h2>JavaScript Interactive Website</h2>
+            <article class="project-card">
 
-                    <p>
-                        This project added JavaScript functionality to a
-                        website. JavaScript was connected as an external file
-                        and used to respond to user actions and make changes
-                        directly in the DOM.
-                    </p>
+                <p class="project-label">
+                    Networking
+                </p>
 
-                    <h3>Skills Used</h3>
+                <h2>
+                    Network Security
+                </h2>
 
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>DOM manipulation</li>
-                        <li>Event listeners</li>
-                        <li>External JavaScript files</li>
-                    </ul>
-                </article>
+                <p>
 
+                    This project focused on learning
+                    how firewalls, passwords,
+                    access controls, and secure network
+                    settings protect systems and information.
 
-                <article class="project-card" data-category="web">
-                    <h2>Soccer Tournament Application Form</h2>
+                </p>
 
-                    <p>
-                        I designed an accessible online application for a
-                        community soccer tournament organized by Yaya's Family
-                        Foundation. The project was designed to help connect
-                        young people from the Louisville and Indiana region
-                        through sports and networking.
-                    </p>
+            </article>
 
-                    <h3>Skills Used</h3>
-
-                    <ul>
-                        <li>Accessible form labels</li>
-                        <li>JavaScript validation</li>
-                        <li>Error messages in the DOM</li>
-                        <li>Responsive CSS</li>
-                    </ul>
-                </article>
-
-
-                <article class="project-card" data-category="security">
-                    <h2>Cybersecurity Research Project</h2>
-
-                    <p>
-                        My cybersecurity research examines security threats and
-                        the ways professionals respond to changing technology.
-                        Areas of interest include artificial intelligence,
-                        phishing, malware, incident response, and threat
-                        detection.
-                    </p>
-
-                    <h3>Skills Used</h3>
-
-                    <ul>
-                        <li>Cybersecurity research</li>
-                        <li>Source evaluation</li>
-                        <li>Threat analysis</li>
-                        <li>Technical communication</li>
-                    </ul>
-                </article>
-
-
-                <article class="project-card" data-category="security">
-                    <h2>Security Incident Investigation</h2>
-
-                    <p>
-                        This project focuses on the process a security analyst
-                        can use when investigating suspicious activity. The
-                        process includes reviewing alerts, gathering evidence,
-                        identifying indicators of compromise, documenting
-                        findings, and recommending appropriate response actions.
-                    </p>
-
-                    <h3>Skills Used</h3>
-
-                    <ul>
-                        <li>Alert triage</li>
-                        <li>Incident response</li>
-                        <li>Log analysis</li>
-                        <li>Security documentation</li>
-                    </ul>
-                </article>
-
-
-                <article class="project-card" data-category="security">
-                    <h2>Phishing Email Analysis</h2>
-
-                    <p>
-                        This cybersecurity exercise demonstrates how suspicious
-                        emails can be evaluated by examining sender information,
-                        links, attachments, social engineering techniques, and
-                        other indicators of phishing.
-                    </p>
-
-                    <h3>Skills Used</h3>
-
-                    <ul>
-                        <li>Email analysis</li>
-                        <li>Phishing detection</li>
-                        <li>Threat identification</li>
-                        <li>Incident documentation</li>
-                    </ul>
-                </article>
-
-            </div>
-
-            <p id="filterStatus" class="sr-only" aria-live="polite"></p>
 
         </div>
+
     </section>
+
 
 </main>
 
-
 <footer>
-    <div class="container">
-        <p>&copy; <span id="year"></span> Yaya Bah. All rights reserved.</p>
-    </div>
+
+    <p>
+        &copy; 2026 Yaya Bah.
+        All rights reserved.
+    </p>
+
 </footer>
 
+
 </body>
+
 </html>

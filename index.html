@@ -1,185 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Yaya Bah's professional cybersecurity and web development portfolio.">
-    <title>Yaya Bah</title>
+
+    <title>Home | Yaya Bah Portfolio</title>
+
+    <meta name="description"
+          content="The personal portfolio website of cybersecurity student Yaya Bah.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
     <script src="script.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="container">
-            <a href="index.html" class="logo">Yaya Bah</a>
+<a class="skip-link" href="#main-content">
+    Skip to main content
+</a>
 
-            <button class="menu-button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false"
-                aria-controls="mainNavigation">
-                ☰
-            </button>
+<header>
+    <div class="site-header">
 
-            <nav id="mainNavigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html" aria-current="page">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <p class="site-title">
+            My <span>Portfolio</span>
+        </p>
+
+        <nav aria-label="Main navigation">
+
+            <a href="index.html"
+               class="active"
+               aria-current="page">
+                Home
+            </a>
+
+            <a href="projects.html">
+                Projects
+            </a>
+
+            <a href="about.html">
+                About &amp; Contact
+            </a>
+
+        </nav>
+
+    </div>
+</header>
+
+
+<main id="main-content">
+
+    <!-- HERO SECTION -->
+
+    <section id="hero"
+             aria-labelledby="hero-heading">
+
+        <div class="hero-text">
+
+            <p class="eyebrow">
+                Cybersecurity • Web Development • Problem Solving
+            </p>
+
+            <h1 id="hero-heading">
+                Welcome to My Portfolio
+            </h1>
+
+            <p>
+                This website introduces who I am,
+                highlights some of my work,
+                and shares my interests in cybersecurity,
+                technology, and web development.
+            </p>
+
+            <a class="button-link"
+               href="about.html">
+                Learn More About Me
+            </a>
+
         </div>
-    </header>
-
-    <main>
-
-        <section class="hero">
-            <div class="container hero-content">
-                <div>
-                    <p class="eyebrow">Cybersecurity & Web Development</p>
-
-                    <h1>Welcome to My Portfolio</h1>
-
-                    <p>
-                        My name is Yaya Bah. I am interested in cybersecurity,
-                        technology, and web development. My professional goal is to
-                        continue developing my skills as a cybersecurity analyst
-                        while learning how modern websites and applications are
-                        designed, secured, and maintained.
-                    </p>
-
-                    <a class="button" href="projects.html">View My Projects</a>
-                </div>
-
-                <div class="hero-card">
-                    <h2>My Focus</h2>
-                    <p>
-                        I am especially interested in security operations, incident
-                        response, threat detection, accessible web design, and
-                        technology that helps people and organizations stay secure.
-                    </p>
-                </div>
-            </div>
-        </section>
 
 
-        <section class="section" id="about">
-            <div class="container">
-                <h2>About Me</h2>
+        <!-- MY PHOTO -->
+
+        <img src="me.jpeg"
+             class="hero-photo"
+             alt="Portrait of Yaya Bah">
+
+    </section>
+
+
+    <!-- SKILLS SECTION -->
+
+    <section aria-labelledby="skills-heading">
+
+        <h2 id="skills-heading">
+            What I Do
+        </h2>
+
+        <p class="section-intro">
+            I am developing skills that will help me
+            build a successful career in cybersecurity
+            and information technology.
+        </p>
+
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+
+                <h3>Cybersecurity</h3>
 
                 <p>
-                    Cybersecurity is the professional community I have chosen to
-                    build my career in because technology continues to affect almost
-                    every part of modern life. Cybersecurity professionals help
-                    protect computers, networks, businesses, and personal
-                    information from threats such as phishing, malware,
-                    ransomware, and data breaches.
+                    I work as a cybersecurity analyst
+                    and enjoy learning how to protect
+                    computer systems, networks,
+                    and sensitive information
+                    from cyber threats.
                 </p>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <h3>Web Development</h3>
 
                 <p>
-                    My studies have also helped me develop experience with HTML,
-                    CSS, JavaScript, responsive design, accessibility, and GitHub.
-                    Building websites has given me a better understanding of how
-                    users interact with technology and why security and
-                    accessibility should be considered during the development
-                    process.
+                    I am learning how to create organized,
+                    attractive, responsive, and accessible
+                    websites using HTML, CSS, and JavaScript.
                 </p>
-            </div>
-        </section>
+
+            </article>
 
 
-        <section class="section alternate" id="skills">
-            <div class="container">
-                <h2>Skills</h2>
+            <article class="feature-card">
 
-                <div class="card-grid">
-
-                    <article class="card">
-                        <h3>Cybersecurity</h3>
-                        <p>
-                            Security monitoring, incident triage, phishing
-                            investigation, threat detection, vulnerability
-                            management, and security awareness.
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Security Tools</h3>
-                        <p>
-                            Experience and knowledge involving SIEM, EDR, Splunk,
-                            CrowdStrike Falcon, ServiceNow, Active Directory and
-                            other security monitoring technologies.
-
-                        </p>
-                    </article>
-
-                    <article class="card">
-                        <h3>Web Development</h3>
-                        <p>
-                            HTML5, CSS3, responsive layouts, JavaScript DOM
-                            interaction, forms, accessibility, and GitHub Pages.
-                        </p>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-
-        <section class="section" id="goals">
-            <div class="container">
-                <h2>Career Goals</h2>
+                <h3>Problem Solving</h3>
 
                 <p>
-                    My long-term goal is to continue growing as a cybersecurity
-                    professional, especially in security operations and incident
-                    response. I want to strengthen my technical skills while also
-                    improving my ability to communicate security problems clearly
-                    to technical and nontechnical audiences.
-                </p>
-            </div>
-        </section>
-
-
-        <section class="section alternate" id="contact">
-            <div class="container">
-                <h2>Contact</h2>
-
-                <p>
-                    I am interested in professional networking, cybersecurity
-                    opportunities, technology projects, and opportunities to
-                    continue developing my skills.
+                    I enjoy analyzing technical problems
+                    and finding practical solutions
+                    that improve security and performance.
                 </p>
 
-                <div class="contact-info">
-                    <p>
-                        <strong>Phone:</strong>
-                        <a href="tel:+15021234567">(502) 202-6662</a>
-                    </p>
+            </article>
 
-                    <p>
-                        <strong>Email:</strong>
-                        <a href="mailto:bahyaya010@email.com">bahyaya010@email.com</a>
-                    </p>
-                </div>
-                <button class="button" id="messageButton">
-                    Show Portfolio Message
+        </div>
+
+    </section>
+
+
+    <!-- FEATURED WORK -->
+
+    <section aria-labelledby="featured-heading">
+
+        <h2 id="featured-heading">
+            Featured Work
+        </h2>
+
+        <p class="highlight">
+
+            Visit my
+
+            <a href="projects.html">
+                Projects page
+            </a>
+
+            to learn more about my portfolio website,
+            cybersecurity labs, and network security work.
+
+        </p>
+
+    </section>
+
+
+    <!-- JAVASCRIPT SECTION -->
+
+    <section id="interactive-demo"
+             aria-labelledby="interactive-heading">
+
+        <h2 id="interactive-heading">
+            JavaScript Interactivity
+        </h2>
+
+        <p class="section-intro">
+            Use the controls below to interact with the page.
+        </p>
+
+
+        <div class="interactive-grid">
+
+
+            <!-- CHANGE MESSAGE -->
+
+            <article class="interactive-card">
+
+                <h3>Change Content</h3>
+
+                <p id="welcome-message"
+                   aria-live="polite">
+
+                    Click the button to change this message.
+
+                </p>
+
+                <button id="change-message-button"
+                        type="button">
+
+                    Change Message
+
                 </button>
 
-                <p id="portfolioMessage" class="message" aria-live="polite"></p>
-            </div>
-        </section>
-
-    </main>
+            </article>
 
 
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="year"></span> Yaya Bah. All rights reserved.</p>
+            <!-- NAME INTERACTION -->
+
+            <article class="interactive-card">
+
+                <h3>Live Style Change</h3>
+
+                <label for="style-input">
+                    Type your name:
+                </label>
+
+                <input id="style-input"
+                       type="text"
+                       placeholder="Enter your name">
+
+                <p id="style-preview"
+                   class="style-preview"
+                   aria-live="polite">
+
+                    Your name will appear here.
+
+                </p>
+
+            </article>
+
+
+            <!-- DYNAMIC LIST -->
+
+            <article class="interactive-card">
+
+                <h3>Dynamic Learning List</h3>
+
+                <label for="list-item-input">
+                    Add something you want to learn:
+                </label>
+
+
+                <div class="list-controls">
+
+                    <input id="list-item-input"
+                           type="text"
+                           placeholder="Example: JavaScript">
+
+                    <button id="add-list-item-button"
+                            type="button">
+
+                        Add Item
+
+                    </button>
+
+                </div>
+
+
+                <ul id="learning-list">
+
+                    <li>Cybersecurity</li>
+
+                    <li>Responsive web design</li>
+
+                </ul>
+
+            </article>
+
         </div>
-    </footer>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        &copy; 2026 Yaya Bah.
+        All rights reserved.
+    </p>
+
+</footer>
 
 </body>
-
 </html>
